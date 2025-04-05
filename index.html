@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of olympus</title>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body style="padding: 0; margin: 0;">
+
+    <div class="bg-image" style="display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 20px;">
+        <header style="position: fixed; top: 1.2rem; left: 50%; transform: translateX(-50%); z-index: 10; width: 90%; background-color: #fff; padding: 10px 20px; border-radius: 12px; display: flex; justify-content: space-between;box-shadow: 0px 8px 50px black;">
+            <div><img src="./img/logoimg.PNG" alt="logo"></div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <p id="selected-count" style="font-size: 0.9rem; font-weight: 600; white-space: wrap;">
+                   <span id="selected-number">0 OF 3</span>
+                   <span class="selected-label"> PRODUCTS SELECTED</span>
+                </p>
+                <button id="checkout-btn" disabled style="border: none; background-color: gray; border-radius: 12px; height: 45px; width: 8vw; min-width: 100px; display: flex; justify-content: center; align-items: center;">
+                    <p style="font-size: 0.9rem; font-weight: 600; color: #fff;">
+                        CHECKOUT
+                     </p>
+                </button>
+            </div>
+        </header>
+        <div style=" padding: 20px; margin-top: 2rem;">
+            <p style="font-size: 2rem; font-weight: 600; text-align: center;">
+                CREATE YOUR OWN WINTER LOOK
+            </p>
+            <p style="font-size: 0.9rem; text-align: center; font-weight: 600;">
+                CHOOSE ONE PRODUCT IN EACH SECTION AND GET 20% ON THE WHOLE BUNDLE
+            </p>
+            <button style="border: none; background-color: blue; border-radius: 12px; height: 45px; width: 8vw; min-width: 100px; display: flex; justify-content: center; align-items: center; margin: 0 auto; margin-top: 2rem; cursor: pointer;">
+                <a href="#step1" style="width: 100%; height: 100%; text-decoration: none;">
+                <p style="font-size: 0.9rem; font-weight: 600; color: #fff;">
+                    START
+                </p>
+            </a>
+            </button>
+        </div>
+    </div>
+    <section id="step1" style="min-height: 500px; padding: 20px 20px 50px 20px; background-color: rgb(186, 206, 206);">
+        <p style="font-size: 2rem; font-weight: 600; text-align: center;">
+            STEP 1
+        </p>
+        <p  style="font-size: 1.2rem; text-align: center;">
+            SELECT SNOW BOARD
+        </p>
+        <div id="snowBoard-container" style="width: 100%; display: flex; justify-content: center; align-items: center;flex-wrap: wrap; gap: 2rem;">
+
+        </div>
+    </section>
+
+    <section id="step2" style="min-height: 500px; padding: 20px 20px 50px 20px;">
+        <p style="font-size: 2rem; font-weight: 600; text-align: center;">
+            STEP 2
+        </p>
+        <p style="font-size: 1.2rem; text-align: center;">
+            SELECT JACKET
+        </p>
+        <div id="jacket-container" style="width: 100%; display: flex; justify-content: center; align-items: center;flex-wrap: wrap; gap: 2rem;">
+
+        </div>
+    </section>
+
+    <section id="step3" style="min-height: 500px; padding: 20px 20px 100px 20px; background-color: rgb(186, 206, 206);">
+        <p style="font-size: 2rem; font-weight: 600; text-align: center;">
+            STEP 3
+        </p>
+        <p style="font-size: 1.2rem; text-align: center;">
+            SELECT HELMET
+        </p>
+        <div id="helmet-container" style="width: 100%; display: flex; justify-content: center; align-items: center;flex-wrap: wrap; gap: 2rem; ">
+
+        </div>
+    </section>
+</body>
+
+</html>
